@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Talk To Yourself</string>
+    <string name="ChatWithYourself">Chat with Yourself</string>
+    <string name="Send">Send</string>
+    <string name="hintForWrite">Write your lovely message! :></string>
+    <string name="Activity2name">Blah Blah</string>
+    <string name="reply">Reply</string>
+</resources>
