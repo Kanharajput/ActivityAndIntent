@@ -15,6 +15,7 @@ public class AnotherOne extends AppCompatActivity implements AdapterView.OnItemS
     private TextView show;
     public static final String ExtraReply = "com.example.talktoyourself.extra.Message";
     private Spinner spinner;
+    private TextView phone_label;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class AnotherOne extends AppCompatActivity implements AdapterView.OnItemS
         // getting the view where we have to display this text
         show = findViewById(R.id.displayUserMessage2);
         show.setText(user_message);
+        phone_label = findViewById(R.id.phone_label);
 
         // getting the spinner
         spinner = findViewById(R.id.spinner);
@@ -47,7 +49,7 @@ public class AnotherOne extends AppCompatActivity implements AdapterView.OnItemS
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+        phone_label.setText(parent.getItemAtPosition(position).toString());
     }
 
     @Override
