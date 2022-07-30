@@ -10,8 +10,8 @@
         android:id="@+id/placeOfMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="212dp"
         android:ems="10"
         android:hint="@string/hintForWrite"
         android:inputType="textLongMessage"
@@ -38,14 +38,14 @@
         android:id="@+id/button"
         android:layout_width="181dp"
         android:layout_height="77dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/purple_500"
         android:onClick="goToAnotherActivity"
         android:text="@string/Send"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/placeOfMessage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placeOfMessage" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/displayUserMessage1"
